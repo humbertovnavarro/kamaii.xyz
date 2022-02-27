@@ -1,6 +1,5 @@
 import { MouseEventHandler } from "react";
 import Link from "next/link";
-import Image from "next/image";
 type NavProps = {
   href: string;
   title: string;
@@ -39,7 +38,7 @@ const Nav = (props: NavProps) => {
   const anchorProp = (
     <a className={className}>
       <span>{props.title}</span>
-      {props.icon && <Image className="m-1 hidden lg:fixed" src={props.icon} alt="linkedIn Icon"></Image>}
+      {props.icon && <img className="m-1 hidden lg:fixed" src="images/ln.png" alt="linkedIn Icon"></img>}
     </a>
   )
   return (

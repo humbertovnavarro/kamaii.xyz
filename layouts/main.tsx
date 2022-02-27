@@ -43,7 +43,7 @@ const Layout = (props: LayoutProps) => {
       <NavBar/>
       <Skybox rotation={rotation}/>
       <div className="flex justify-center">
-        <div className="md:w-2/5">
+        <div className="md:w-3/5 lg:w-2/5 w-full p-4">
           {props.children}
         </div>
       </div>

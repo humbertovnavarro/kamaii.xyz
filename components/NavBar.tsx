@@ -8,7 +8,7 @@ const Navbar = () => {
   const page = router.pathname;
   return (
     <div className="w-full bg-secondary h-16 p-4 flex justify-center text-sm z-10 sticky top-0 rounded-lg">
-      <div className="md:w-2/5 grid grid-cols-6 gap-2">
+      <div className="md:w-3/5 lg:w-2/5 grid grid-cols-6 gap-2">
         <Nav href="/" active={page === "/"} title={"Home"}/>
         <Nav href="/projects" active={page === "/projects"} title={"Projects"}/>
         <Nav href="/about" active={page === "/about"} title={"About"}/>
